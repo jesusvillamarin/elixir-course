@@ -1,0 +1,12 @@
+<%= form_for @changeset, topic_path(@conn, :update, @topic), fn f -> %>
+
+<h5 style="color:cadetblue"> Topic number <%= @topic.id %> </h5>
+<div class="form-group"> 
+    <%= text_input f, :title, placeholder: "Title", class: "form-control" %>
+    <div class="wrapper-error">
+     <strong style="font-weight:900"> <%= error_tag f, :title %> </strong>
+     </div>
+<div>
+     <button type="submit" class="btn btn-primary"> Update topic <i style="position:relative; top:3px" class="material-icons">update</i> </button>
+
+<% end %>

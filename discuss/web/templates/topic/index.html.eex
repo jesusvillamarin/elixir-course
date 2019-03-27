@@ -1,0 +1,30 @@
+<h3> #Topics... </h3>
+
+<ul class="collection">
+    <%= for topic <- @topics do %>
+    <li class="collection-item">
+        #<%= topic.id%>
+        <%= topic.title%>
+        
+        <div class="right">
+            <%= link to: topic_path(@conn, :delete, topic.id), method: :delete do %>
+                <i class="material-icons"> delete </i>
+            <%= end %>
+
+            <%= link to: topic_path(@conn, :edit, topic.id), style: "margin-bottom:5px" do %>
+                <i class="material-icons"> edit</i>
+            <%= end %>
+        </div>
+
+    
+      
+    </li>
+    <%= end %>
+</ul>
+
+<div class="fixed-action-btn">
+    <%= link to: topic_path(@conn, :new), class: "btn-floating btn-large waves-effect waves-light" do %>
+        <i class="material-icons"> add </i>
+    <% end %>
+</div>
+

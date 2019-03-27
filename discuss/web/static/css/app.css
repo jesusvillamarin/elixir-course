@@ -1,0 +1,18 @@
+/* This file is for your main application css. */
+
+h5, .help-block{
+    display: inline-block;
+    color: red;
+}
+
+.form-group{
+    position: relative;
+}
+.form-control{
+    margin-bottom: 30px !important;
+}
+.wrapper-error{
+    position: absolute;
+    top:37px
+}
+

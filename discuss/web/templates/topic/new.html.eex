@@ -1,0 +1,10 @@
+<%= form_for @changeset, topic_path(@conn, :create), fn f -> %>
+
+<div class="form-group"> 
+    <%= text_input f, :title, placeholder: "Titulo del tema", class: "form-control" %>
+    <div class="wrapper-error">
+     <strong style="font-weight:900"> <%= error_tag f, :title %> </strong>
+     </div>
+<div>
+    <button type="submit" class="btn btn-primary"> Save topic <i style="position:relative; top:3px" class="material-icons">save</i> </button>
+<% end %>
