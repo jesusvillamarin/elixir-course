@@ -38,5 +38,7 @@ Posteriormente se accede a la carpeta y archivo generado por este y se agraga la
   end
 ```
 
+* Posteriormente se ejecuta mix ecto.migrate para crear la tabla en la BD
+
 ## Ver las rutas que hay en nuestra aplicación
   > mix phoenix.routes

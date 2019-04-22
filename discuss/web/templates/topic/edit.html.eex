@@ -10,3 +10,4 @@
      <button type="submit" class="btn btn-primary"> Update topic <i style="position:relative; top:3px" class="material-icons">update</i> </button>
 
 <% end %>
+

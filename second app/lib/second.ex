@@ -55,6 +55,10 @@ defmodule Second do
 
     def updateMap(map, key, value) do
         Map.put(map,key, value)
+
+        # %{"title" => title }
+        # map = %{:title => title}
+        # map = %{title: title }
     end
 
     def createTupla() do

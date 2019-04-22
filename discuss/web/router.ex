@@ -27,7 +27,13 @@ defmodule Discuss.Router do
 
     # resources es un ayudante, que permitira evitar crear todas las rutas, y lo que hará
     # es crear las rutas de acuerdo a los metodos definidos en el controlador
+  end
 
+  scope "/auth", Discuss do
+    pipe_through :browser
+
+    get "/:provider", AuthController, :request
+    get "/:provider/callback", AuthController, :callback
   end
 
   # Other scopes may use custom stacks.
